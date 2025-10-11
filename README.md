@@ -19,8 +19,8 @@ PDF opens automatically after download
 Technologies Used
 
 Java (Swing + AWT)
-MySQL (JDBC)
-iTextPDF Library
+MySQL (JDBC)(I used mysql-connector-j-9.4.0)
+iTextPDF Library (I used itextpdf-5.5.13.3 )
 Eclipse IDE
 
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
