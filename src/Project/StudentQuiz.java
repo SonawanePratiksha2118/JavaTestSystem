@@ -56,7 +56,7 @@ public class StudentQuiz extends JFrame implements ActionListener {
 
     void connect() {
         try {
-            con = DriverManager.getConnection("jdbc:mysql://localhost:3306/training_system","root","Pr@1817tiksha");
+            con = DriverManager.getConnection("jdbc:mysql://localhost:3306/training_system","root","");
             Statement st = con.createStatement(ResultSet.TYPE_SCROLL_INSENSITIVE, ResultSet.CONCUR_READ_ONLY);
             rs = st.executeQuery("SELECT * FROM questions WHERE topic_name='" + topic + "'");
             rs.first();
@@ -99,3 +99,4 @@ public class StudentQuiz extends JFrame implements ActionListener {
         }
     }
 }
+
