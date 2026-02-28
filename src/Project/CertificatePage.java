@@ -127,7 +127,7 @@ public class CertificatePage extends JFrame implements ActionListener {
         try {
             Class.forName("com.mysql.cj.jdbc.Driver");
             con = DriverManager.getConnection(
-                "jdbc:mysql://localhost:3306/training_system","root","Pr@1817tiksha");
+                "jdbc:mysql://localhost:3306/training_system","root","");
             PreparedStatement ps = con.prepareStatement(
                 "SELECT first_name, middle_name, last_name FROM users WHERE username=?");
             ps.setString(1, username);
@@ -143,3 +143,4 @@ public class CertificatePage extends JFrame implements ActionListener {
         return name;
     }
 }
+
