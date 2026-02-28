@@ -50,7 +50,7 @@ public class Signup extends JFrame implements ActionListener {
     public void actionPerformed(ActionEvent ae) {
         if(ae.getSource() == b3) {
             try {
-                Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/training_system","root","Pr@1817tiksha");
+                Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/training_system","root","");
                 PreparedStatement ps = con.prepareStatement("INSERT INTO users(first_name,middle_name,last_name,username,password) VALUES(?,?,?,?,?)");
                 ps.setString(1, t1.getText());
                 ps.setString(2, t2.getText());
@@ -75,3 +75,4 @@ public class Signup extends JFrame implements ActionListener {
         new Signup();
     }
 }
+
